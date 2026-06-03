@@ -24,4 +24,7 @@ jobs:
         run: echo "this is my second step"
 
       - name: pipeline break
-        run: echo "pipeline is fixed"
+        run: echo "pipeline is fixed".
+
+      - name: build docker image 
+        run: docker build -t devops .
